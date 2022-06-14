@@ -1,0 +1,264 @@
+/** custom styling and classes **/
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text-black {
+  color: #000;
+}
+
+.text-gray {
+  color: #4a4b4c;
+}
+
+.text-white {
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #000;
+}
+
+.bg-blue {
+  background-color: #7297ef;
+}
+
+/********* HEADER ********/
+.site-header {
+  background-color: #f6f6f6;
+}
+.header-top-currency-link {
+  color: #000;
+}
+.currency {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2959ce;
+}
+
+.header-top {
+  width: 1440px;
+}
+
+.header-top-search {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8d8d8d;
+  width: 275px;
+  height: 45px;
+}
+
+.header-top-language-toggle {
+  background-color: #8d8d8d;
+}
+
+.header-top-lang-uz {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 12px;
+  color: #000000;
+  background-color: #fff;
+}
+
+.header-top-lang-ru {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #a6a6a6;
+}
+
+.header-top-end-signup {
+  background-color: #7296ec;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+/* navbar */
+.site-navigation-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #7f7f7f;
+}
+
+/************* ASIDE TOP **************/
+.aside-top-ad-image {
+  width: 1200px;
+  height: 128px;
+}
+/************* ASIDE TOP **************/
+
+/********** LATEST NEWS **********/
+.latest-news-item {
+  background-color: #f6f6f6;
+}
+.latest-news-item-container {
+  width: 338px;
+}
+.latest-news-item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+.latest-news-item-link {
+  color: #000;
+}
+
+.latest-news-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #4a4b4c;
+}
+.latest-news-item-img {
+  width: 359px;
+  height: 165px;
+}
+
+.latest-news-item-box-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  color: #5e5f61;
+}
+
+/*********** ARTICLE **********/
+.site-article {
+  background-color: rgb(245, 180, 159);
+  width: 1050px;
+  height: 100px;
+}
+.article-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.article-link {
+  background-color: #f78b3b;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/***************** WORLD NEWS *************/
+.world-news-item {
+  background-color: #f6f6f6;
+}
+.world-news-item-container {
+  width: 535px;
+}
+.world-news-item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.world-news-item-link {
+  color: #000;
+}
+
+.world-news-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.world-news-item-box-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #5e5f61;
+}
+
+.world-news-wrapper-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #eaeaea;
+}
+
+/* main news */
+.main-news-item {
+  background-color: #f6f6f6;
+}
+.main-news-item-link {
+  color: #000;
+}
+.main-news-item-container {
+  width: 311px;
+}
+.main-news-item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.main-news-item-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #5e5f61;
+}
+
+/****************** ASIDE BOTTOM ************/
+.aside-bottom-ad-img {
+  width: 393px;
+  height: 338px;
+}
+/****************** ASIDE BOTTOM ************/
+
+/*********** FOOTER *********/
+.footer-copyright-logo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.footer-copyright-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+}
+.footer-links-item-link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
