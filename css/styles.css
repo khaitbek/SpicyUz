@@ -198,6 +198,8 @@ h4 {
   padding: 20px 17px;
   margin-bottom: 10px;
 }
+
+
 .latest-news-item-container {
   width: 338px;
 }
@@ -231,6 +233,36 @@ h4 {
   align-items: center;
 }
 
+.latest-news-item-box::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: calc(50%) 0;
+}
+
+.last-1::before{
+  background-image: url("../images/brands/KB.png");
+}
+.last-2::before{
+  background-image: url("../images/brands/image5.png");
+}
+.last-3::before{
+  background-image: url("../images/brands/X+.png");
+}
+.last-4::before{
+  background-image: url("../images/brands/digger_ru.png");
+}
+.last-5::before{
+  background-image: url("../images/brands/lenta_ru.png");
+}
+.last-6::before{
+  background-image: url("../images/brands/Tarantas_News.png");
+}
+
+
+
 .latest-news-item-box-text {
   font-size: 12px;
   line-height: 14px;
@@ -243,7 +275,7 @@ h4 {
   width: 1050px;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(245, 180, 159);
+  background-image: url("../images/article.png");
   border-radius: 10px;
 }
 .article-inner {
@@ -335,6 +367,66 @@ h4 {
   display: flex;
   align-items: center;
 }
+
+.world-news-item-box::before{
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.box-1::before{
+  background-image: url("../images/in_the_world_section/card-images/kb.jpg");
+}
+
+.box-2::before{
+  background-image: url("../images/in_the_world_section/card-images/tass.jpg");
+}
+
+.box-3::before{
+  background-image: url("../images/in_the_world_section/card-images/tbk.jpg");
+}
+.box-4::before{
+  background-image: url("../images/in_the_world_section/card-images/solenka.jpg");
+}
+
+.box-5::before{
+  background-image: url("../images/interesting-images/kb.jpg");
+}
+
+.box-6::before{
+  background-image: url("../images/interesting-images/pp-news.jpg");
+}
+
+.box-6::before{
+  background-image: url("../images/interesting-images/pp-news.jpg");
+}
+
+.box-7::before{
+  background-image: url("../images/interesting-images/dns-club.jpg");
+}
+
+.box-8::before{
+  background-image: url("../images/interesting-images/sputnik-uzb.jpg");
+}
+
+.box-9::before{
+  background-image: url("../images/interesting-images/i-reactor.jpg");
+}
+
+.box-10::before{
+  background-image: url("../images/interesting-images/company.jpg");
+}
+
+.box-11::before{
+  background-image: url("../images/interesting-images/ferghana.jpg");
+}
+
+.box-12::before{
+  background-image: url("../images/interesting-images/fbm.jpg");
+}
+
+
 
 .world-news-item-box-img{
   margin-right: 10px;
