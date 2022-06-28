@@ -134,12 +134,17 @@ h4 {
   background-position: 15px center;
   background-size: 20px 20px;
   background-repeat: no-repeat;
+  outline: none;
 }
 
 .user_search::placeholder {
   font-size: 14px;
   line-height: 17px;
   color: #8D8D8D;
+}
+
+.user_search:focus{
+  box-shadow: 0 0 3px 1px #2959ce;
 }
 
 .search-text {
