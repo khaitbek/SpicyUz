@@ -143,7 +143,7 @@ h4 {
   color: #8D8D8D;
 }
 
-.user_search:focus{
+.user_search:focus {
   box-shadow: 0 0 3px 1px #2959ce;
 }
 
@@ -209,6 +209,7 @@ h4 {
   margin-top: 30px;
   margin-bottom: 40px;
   padding-bottom: 20px;
+  padding-left: 0;
   border-bottom: 1px solid #d1d1d1;
 }
 
@@ -649,4 +650,118 @@ h4 {
 
 .footer-bottom-item:nth-child(3) {
   margin-right: 33px;
+}
+
+
+/* contact */
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.contact-title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.contact-start {
+  width: 58%;
+  margin-right: 10px;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-input {
+  width: 49%;
+  margin-bottom: 10px;
+  padding: 20px 0 20px 18px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  outline: none;
+}
+
+
+.contact-input:focus {
+  box-shadow: 0 0 0.5px 2px #2959ce;
+}
+
+.contact-input:nth-child(1) {
+  margin-right: 10px;
+}
+
+.contact-input:nth-child(3) {
+  display: block;
+  width: 100%;
+}
+
+.contact-input::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.contact-list {
+  width: 40%;
+  background: #F6F6F6;
+  border-radius: 10px;
+}
+
+.text-area {
+  width: 100%;
+  padding-top: 18px;
+  padding-left: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+.text-area:focus {
+  box-shadow: 0 0 0.5px 2px #2959ce;
+}
+
+.text-area::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  opacity: 0.5;
+}
+
+/* contacts list */
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 40px 24px;
+}
+
+.contact-adress{
+  font-style: normal;
+}
+
+.contact-link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
+}
+
+.contact-item:not(:last-child) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.contact-heading {
+  margin: 0 0 7px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
 }
