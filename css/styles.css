@@ -76,10 +76,24 @@ h4 {
   padding-left: 20px;
 }
 
+.primary-btn {
+  padding: 17px 30px;
+  border: 2px solid transparent;
+  background-color: #7297ef;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  /* identical to box height */
+
+  color: #fff;
+}
+
 /********* HEADER ********/
 .header-top {
   margin-bottom: 30px;
-  padding: 39px 0;
+  padding: 30px 0;
   background-color: #f6f6f6;
 }
 
@@ -654,10 +668,14 @@ h4 {
 
 
 /* contact */
+.contact-section {
+  padding-bottom: 100px;
+}
+
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -674,6 +692,7 @@ h4 {
 
 .contact-form {
   display: flex;
+  justify-content: flex-end;
   flex-wrap: wrap;
 }
 
@@ -716,6 +735,7 @@ h4 {
 
 .text-area {
   width: 100%;
+  margin-bottom: 20px;
   padding-top: 18px;
   padding-left: 20px;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -743,7 +763,7 @@ h4 {
   padding: 40px 24px;
 }
 
-.contact-adress{
+.contact-adress {
   font-style: normal;
 }
 
