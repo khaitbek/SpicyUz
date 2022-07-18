@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Namanganliklar 24</title>
   <!--* css -->
-  <link rel="stylesheet" href="./css/styles.min.css">
-  <!-- <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css" /> -->
+  <!-- <link rel="stylesheet" href="./css/styles.min.css"> -->
+  <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
   <!--* header -->
@@ -260,7 +260,7 @@
           Хотите быть в курсе свежих новостей? <br />
           Включите уведомления!
         </h3>
-        <a class="article-link text-white" href="#">Включит</a>
+        <button class="article-link text-white modal-open-btn btn" id="modal__open__btn" href="#">Включит</button>
       </div>
     </article>
 
@@ -529,5 +529,16 @@
       </div>
     </div>
   </footer>
+
+
+  <!-- modal -->
+  <dialog class="modal" id="modal">
+    <h3 class="modal-title">Хотите быть в курсе свежих новостей?  Включите уведомления!
+    </h3>
+    <button class="btn modal-turn-btn" id="modal__turn">Включит</button>
+    <button class="close-modal btn" id="modal__close__btn">&times;</button>
+  </dialog>
+
+  <script src="./script/app.js"></script>
 </body>
 </html>
