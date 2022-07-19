@@ -796,7 +796,7 @@ h4 {
 ********************************/
 
 .modal {
-  position: relative;
+  /* position: relative; */
   width: 850px;
   text-align: center;
   padding: 50px;
