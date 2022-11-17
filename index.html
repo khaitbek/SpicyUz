@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Namanganliklar 24</title>
+  <!--  script -->
+  <script src="./script/app.js" type="module" defer></script>
   <!--* css -->
   <!-- <link rel="stylesheet" href="./css/styles.min.css"> -->
   <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
+
 <body>
   <!--* header -->
   <header class="site-header">
@@ -20,75 +24,25 @@
           <div class="header-top-start">
             <!-- logo -->
             <a class="header-logo" href="./index.html">
-              <img class="header-logo-img" width="264" height="28" src="./images/header_images/namanganliklar-logo.svg"
+              <img class="header-logo-img" width="264" height="100" src="./images/logo.svg"
                 alt="Namanganliklar Logo" />
             </a>
-            <!-- currency list -->
-            <ul class="header-top-currency-list">
-              <li class="currency-item">
-                <span class="currency">$</span> 10137.2
-              </li>
-              <li class="currency-item">
-                <span class="currency">P</span> 138.26
-              </li>
-            </ul>
           </div>
-
           <div class="header-top-end">
             <!-- search bar -->
-            <form action="https://echo.htmlacademy.ru/" class="search-form" autocomplete="off">
-              <input class="user_search" type="search" name="user_search" aria-label="user_search" placeholder="Поиск">
+            <form class="search-form" id="searchForm" action="https://echo.htmlacademy.ru/" autocomplete="off">
+              <input class="user_search" id="searchInput" type="search" name="user_search" aria-label="user_search"
+                placeholder="Search for news">
             </form>
-            <!-- language toggle -->
-            <ul class="lang-list">
-              <li class="lang-item">
-                <a class="lang-link active-lang" href="#"> УЗ </a>
-              </li>
-              <li class="lang-item">
-                <a class="lang-link" href="#"> РУ </a>
-              </li>
-            </ul>
-            <!-- signup -->
-            <a class="header-top-end-signup" href="#">Войти</a>
           </div>
         </div>
       </div>
     </div>
-
     <!--* header bottom -> site navigation -->
     <nav class="site-navigation">
       <div class="container">
-        <ul class="site-navigation-links">
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Главное</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="./interesting.html">Интересное</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Экономика</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Политика</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Общество</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Технологии</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Спорт</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Культура</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Происшествия</a>
-          </li>
-          <li class="site-navigation-item">
-            <a class="site-navigation-link" href="#">Наука</a>
-          </li>
+        <ul class="site-navigation-links" id="categoryList">
+
         </ul>
       </div>
     </nav>
@@ -96,449 +50,45 @@
 
   <!--* end of the header  -->
   <!--* main -->
-  <main>
-    <aside class="aside-top">
-      <div class="container">
-        <a class="aside-top-ad" target="blank" href="https://shopme.uz/">
-          <img class="aside-top-ad-image" src="./images/banner-images/shopme_image.jpg" srcset="
-                ./images/banner-images/shopme_image.jpg    1x,
-                ./images/banner-images/shopme_image@2x.jpg 2x
-              " alt="ShopMe ad image" width="1200" height="128" />
-        </a>
-      </div>
-    </aside>
-
+  <main class="site-main">
     <!--* Latest news -->
     <section class="latest-news">
       <div class="container">
-        <ul class="latest-news-list">
-          <li class="latest-news-item">
-            <h3 class="latest-news-item-title">
-              <a class="latest-news-item-link" href="#">
-                Кандидат на пост канцлера ФРГ Шольц назвал условия
-                коалиционного соглашения
-              </a>
-            </h3>
-            <p class="latest-news-item-text text-gray">
-              Лидер Социал-демократической партии Германии (СДПГ) и кандидат
-              на должность...
-            </p>
-            <img class="latest-news-item-img" src="./images/card_images/germany.jpg" srcset="
-                  ./images/card_images/germany.jpg    1x,
-                  ./images/card_images/germany@2x.jpg 2x
-                " alt="template logo" width="359" height="165" />
-            <div class="latest-news-item-box last-1">
-
-              <p class="latest-news-item-box-text">
-                ИА Красная Весна
-                <time class="latest-news-item-box-time">15:55</time>
-              </p>
-            </div>
-          </li>
-          <li class="latest-news-item">
-            <div class="latest-news-item-container">
-              <h3 class="latest-news-item-title">
-                <a class="latest-news-item-link" href="#">Ученые доказали экспериментальным путем пользу покровных
-                  культур</a>
-              </h3>
-            </div>
-            <p class="latest-news-item-text text-gray">
-              Новое исследование ученых университета Иллинойса объединяет
-              полевые данные...
-            </p>
-            <img class="latest-news-item-img" src="./images/card_images/corn.jpg" srcset="
-                  ./images/card_images/corn.jpg    1x,
-                  ./images/card_images/corn@2x.jpg 2x
-                " alt="corn image" width="359" height="165" />
-            <div class="latest-news-item-box last-2">
-
-              <p class="latest-news-item-box-text">
-                Газета.Ru <time class="latest-news-item-box-time">12:54</time>
-              </p>
-            </div>
-          </li>
-          <li class="latest-news-item">
-            <div class="latest-news-item-container">
-              <h3 class="latest-news-item-title">
-                <a class="latest-news-item-link" href="#">Baidu запустила публичный сервис роботакси Apollo Go в
-                  Шанхае</a>
-              </h3>
-            </div>
-            <p class="latest-news-item-text text-gray">
-              Автопарк Baidu состоит из модифицированных электромобилей EV...
-            </p>
-            <img class="latest-news-item-img" src="./images/card_images/car.jpg" srcset="
-                  ./images/card_images/car.jpg    1x,
-                  ./images/card_images/car@2x.jpg 2x
-                " alt="electro car image" width="359" height="165" />
-            <div class="latest-news-item-box last-3">
-
-              <p class="latest-news-item-box-text">
-                Хайтек+ <time class="latest-news-item-box-time">13:44</time>
-              </p>
-            </div>
-          </li>
-          <li class="latest-news-item">
-            <div class="latest-news-item-container">
-              <h3 class="latest-news-item-title">
-                <a class="latest-news-item-link" href="#">Стали известны ёмкости аккумуляторов всех моделей iPhone
-                  13</a>
-              </h3>
-              <p class="latest-news-item-text text-gray">
-                Во время презентации iPhone 13 Apple придала большое
-                значения...
-              </p>
-            </div>
-            <img class="latest-news-item-img" src="./images/card_images/Iphone13.jpg" srcset="
-                  ./images/card_images/Iphone13.jpg    1x,
-                  ./images/card_images/Iphone13@2x.jpg 2x
-                " alt="Iphone13 image" width="359" height="165" />
-            <div class="latest-news-item-box last-4">
-
-              <p class="latest-news-item-box-text">
-                Digger.ru <time class="latest-news-item-box-time">14:25</time>
-              </p>
-            </div>
-          </li>
-          <li class="latest-news-item">
-            <div class="latest-news-item-container">
-              <h3 class="latest-news-item-title">
-                <a class="latest-news-item-link" href="#">
-                  Nature: ученые смогли доказать природное происхождение
-                  коронавируса SARS-CoV-2
-                </a>
-              </h3>
-              <p class="latest-news-item-text text-gray">
-                Во время презентации iPhone 13 Apple придала большое
-                значение...
-              </p>
-            </div>
-            <img class="latest-news-item-img" src="./images/card_images/surgery.jpg" srcset="
-                  ./images/card_images/surgery.jpg    1x,
-                  ./images/card_images/surgery@2x.jpg 2x
-                " alt="surgery image" width="359" height="165" />
-            <div class="latest-news-item-box last-5">
-
-              <p class="latest-news-item-box-text">
-                Lenta.ru <time class="latest-news-item-box-time">10:54</time>
-              </p>
-            </div>
-          </li>
-          <li class="latest-news-item">
-            <div class="latest-news-item-container">
-              <h3 class="latest-news-item-title">
-                <a class="latest-news-item-link" href="#">Китайская марка JAC повысила цены на лифтбек и пикап в
-                  <br />
-                  России</a>
-              </h3>
-              <p class="latest-news-item-text text-gray">
-                Две модели китайского бренда JAC из пяти, представленных на
-                российском...
-              </p>
-            </div>
-            <img class="latest-news-item-img" src="./images/card_images/car_black.jpg" srcset="
-                  ./images/card_images/car_black.jpg    1x,
-                  ./images/card_images/car_black@2x.jpg 2x
-                " alt="car image" width="359" height="165" />
-            <div class="latest-news-item-box last-6">
-
-              <p class="latest-news-item-box-text">
-                Тарантас Ньюс
-                <time class="latest-news-item-box-time">10:44</time>
-              </p>
-            </div>
-          </li>
+        <ul class="latest-news-list" id="newsList">
         </ul>
       </div>
     </section>
     <!--* banner end -->
-
-    <!--* article -->
-    <article class="site-article">
-      <div class="article-inner">
-        <h3 class="article-title text-black">
-          Хотите быть в курсе свежих новостей? <br />
-          Включите уведомления!
-        </h3>
-        <button class="article-link text-white modal-open-btn btn" id="modal__open__btn">Включит</button>
-      </div>
-    </article>
-
-    <!--* in the world section -->
-    <section class="world-news">
-      <div class="container">
-        <h3>В мире</h3>
-        <!-- news wrapper -->
-        <div class="news-container">
-          <div class="world-news-wrapper">
-            <ul class="world-news-list">
-              <li class="world-news-item">
-                <img class="world-news-item-img" src="./images/in_the_world_section/airplane.jpg" srcset="
-                      ./images/in_the_world_section/airplane.jpg        1x,
-                      ./images/in_the_world_section/airplane_retina.jpg 2x
-                    " alt="airplane" width="210" height="165" />
-                <div class="world-news-item-info">
-                  <div class="world-news-item-container">
-                    <h4 class="world-news-item-title">
-                      <a href="#" class="world-news-item-link">Китайский Чунцин запустил чартерный рейс для
-                        студентов до Британии</a>
-                    </h4>
-                    <p class="world-news-item-text text-gray">
-                      Чартерный рейс с 244 китайскими студентами вылетел из
-                      города центрального подчинения Чунцина на юго-западе
-                      Китая в британский Манчестер...
-                    </p>
-                  </div>
-                  <div class="world-news-item-box box-1">
-
-                    <p class="world-news-item-box-text">
-                      ИА Красная Весна
-                      <time class="world-news-item-box-time">12:25</time>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="world-news-item">
-                <img class="world-news-item-img" src="./images/in_the_world_section/angela_merkel.jpg"
-                  alt="angela merkel" width="210" height="165" srcset="
-                      ./images/in_the_world_section/angela_merkel.jpg        1x,
-                      ./images/in_the_world_section/angela_merkel_retina.jpg 2x
-                    " />
-
-                <div class="world-news-item-info">
-                  <div class="world-news-item-container">
-                    <h4 class="world-news-item-title">
-                      <a href="#" class="world-news-item-link">В Германии выпустят ограниченную партию плюшевых
-                        мишек в образе Меркель</a>
-                    </h4>
-                  </div>
-                  <p class="world-news-item-text text-gray">
-                    БЕРЛИН, 19 сентября. / ТАСС/. Знаменитая фабрика по
-                    производству плюшевых игрушек в городе Кобург (федеральная
-                    земля Бавария) изготовила уникального...
-                  </p>
-                  <div class="world-news-item-box box-2">
-
-                    <p class="world-news-item-box-text">
-                      ТАСС
-                      <time class="world-news-item-box-time">11:35</time>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="world-news-item">
-                <img class="world-news-item-img" src="./images/in_the_world_section/china_street.jpg" alt="china street"
-                  width="210" height="165" srcset="
-                      ./images/in_the_world_section/china_street.jpg        1x,
-                      ./images/in_the_world_section/china_street_retina.jpg 2x
-                    " />
-
-                <div class="world-news-item-info">
-                  <div class="world-news-item-container">
-                    <h4 class="world-news-item-title">
-                      <a href="#" class="world-news-item-link">Акции КНР утратили доверие инвесторов. Что делать с
-                        бумагами прямо сейчас</a>
-                    </h4>
-                  </div>
-                  <p class="world-news-item-text text-gray">
-                    За последние месяцы инвесторы в китайский рынок пережили
-                    настоящее потрясение — из-за ужесточения регулирования
-                    технологического сектора и критики некоторых...
-                  </p>
-                  <div class="world-news-item-box box-3">
-
-                    <p class="world-news-item-box-text">
-                      РБК Инвестиции
-                      <time class="world-news-item-box-time">09:35</time>
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="world-news-item">
-                <img src="./images/in_the_world_section/china_flag.jpg" alt="china flag" width="210" height="165"
-                  srcset="
-                      ./images/in_the_world_section/china_flag.jpg        1x,
-                      ./images/in_the_world_section/china_flag_retina.jpg 2x
-                    " />
-
-                <div class="world-news-item-info">
-                  <div class="world-news-item-container">
-                    <h4 class="world-news-item-title">
-                      <a href="#" class="world-news-item-link">Китай раскритиковал заключенный Австралией, США и
-                        Великобританией антикитайский союз AUKUS</a>
-                    </h4>
-                  </div>
-                  <p class="world-news-item-text text-gray">
-                    Не только Франция, которая лишилась многомиллиардного
-                    контракта с Австралий, осталась недовольна созданием
-                    трехстороннего оборонного альянса AUKUS, пишет
-                    Anna-News.info
-                  </p>
-                  <div class="world-news-item-box box-4">
-                    <p class="world-news-item-box-text">
-                      Solenka.info
-                      <time class="world-news-item-box-time">19:43</time>
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-            <a class="world-news-wrapper-link text-black" href="#">Показать ещё</a>
-          </div>
-          <div class="main-news">
-            <div class="main-news-container">
-              <h3 class="text-black main-news-title">Главное</h3>
-              <ul class="main-news-list">
-                <li class="main-news-item">
-                  <div class="main-news-item-container">
-                    <h4 class="main-news-item-title">
-                      <a href="#" class="main-news-item-link">
-                        В Фергане создадут узбекско-пакистанский университет
-                      </a>
-                    </h4>
-                  </div>
-                  <p class="main-news-item-text">
-                    Sputnik Узбекистан
-                    <time class="main-news-item-box-time">14:09</time>
-                  </p>
-                </li>
-                <li class="main-news-item">
-                  <div class="main-news-item-container">
-                    <h4 class="main-news-item-title">
-                      <a href="#" class="main-news-item-link">
-                        Узбекистан утвердил соглашение о содействии занятости
-                        в странах СНГ
-                      </a>
-                    </h4>
-                  </div>
-                  <p class="main-news-item-text">
-                    ИА Красная Весна
-                    <time class="main-news-item-box-time">10:19</time>
-                  </p>
-                </li>
-                <li class="main-news-item">
-                  <div class="main-news-item-container">
-                    <h4 class="main-news-item-title">
-                      <a href="#" class="main-news-item-link">
-                        В Узбекистане увеличиваются очереди за автомобилями
-                        UzAuto
-                      </a>
-                    </h4>
-                  </div>
-                  <p class="main-news-item-text">
-                    Северная газета (Армянск)
-                    <time class="main-news-item-box-time">13:50</time>
-                  </p>
-                </li>
-                <li class="main-news-item last-item">
-                  <div class="main-news-item-container">
-                    <h4 class="main-news-item-title">
-                      <a href="#" class="main-news-item-link">
-                        Минтуризма опровергло приостановку выплат за шаги
-                      </a>
-                    </h4>
-                  </div>
-                  <p class="main-news-item-text">
-                    Sputnik Узбекистан
-                    <time class="main-news-item-box-time">14:32</time>
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <aside class="aside-bottom">
-              <a class="aside-bottom-ad-link" target="blank" href="https://olmosresidence.uz/"><img
-                  class="aside-bottom-ad-img" src="./images/aside_image.jpg" srcset="
-                      ./images/aside_image.jpg        1x,
-                      ./images/aside_image_retina.jpg 2x
-                    " alt="template image" width="393" height="338" /></a>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-blue text-white site-footer">
-    <div class="container">
-      <div class="footer-top">
-        <!-- top-start -->
-        <div class="footer-copyright">
-          <strong class="footer-copyright-logo">Namanganliklar 24</strong>
-          <p class="footer-copyright-text">
-            Воспроизводство, копирование, использование информации с сайта
-            «NAMANGANLIKLAR24.UZ» возможно только с предварительного
-            письменного разрешения редакции.
-          </p>
-        </div>
-        <!--* top-middle and top-end sides are near to each other. That's why we're gonna use a div here -->
-        <div class="footer-links-container">
-          <ul class="footer-links">
-            <li class="footer-links-item">
-              <a class="footer-links-item-link text-white" href="#">Информация о сайте</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-links-item-link text-white" href="#">Использование материалов</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-links-item-link text-white" href="./contact.html">Напишите нам</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-links-item-link text-white" href="#">Темы дня</a>
-            </li>
-          </ul>
-          <ul class="footer-links">
-            <li class="footer-links-item">
-              <a class="footer-links-item-link text-white" href="#">Реклама</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-links-item-link text-white" href="#">Наша команда</a>
-            </li>
-            <li class="footer-links-item">
-              <a class="footer-links-item-link text-white" href="#">Прислать новость</a>
-            </li>
-          </ul>
-          <!-- footer bottom -->
-        </div>
+  <!-- templates -->
+  <template id="categoryTemplate">
+    <li class="site-navigation-item" data-search-query="" id="categoryItem">
+    </li>
+  </template>
+  <template id="newsTemplate">
+    <li class="latest-news-item" id="newsItem">
+      <h3 class="latest-news-item-title" id="newsTitle">
+        <a class="latest-news-item-link" id="newsLink" href="#">
+          Кандидат на пост канцлера ФРГ Шольц назвал условия
+          коалиционного соглашения
+        </a>
+      </h3>
+      <p class="latest-news-item-text text-gray" id="newsDescription">
+        Лидер Социал-демократической партии Германии (СДПГ) и кандидат
+        на должность...
+      </p>
+      <img class="latest-news-item-img" src="./images/card_images/germany.jpg" alt="template logo" id="newsImg"
+        width="359" height="165" />
+      <div class="latest-news-item-box last-1">
+
+        <p class="latest-news-item-box-text" id="newsSource">
+        </p>
+        <time class="latest-news-item-box-time news-time" id="newsTime"></time>
       </div>
-      <div class="footer-bottom">
-        <strong class="footer-bottom-title">Наши <br> социальные сети</strong>
-        <ul class="footer-bottom-list">
-          <li class="footer-bottom-item">
-            <a class="footer-bottom-list-link" href="https://facebook.com" target="blank"><img
-                class="footer-bottom-list-link-img" src="./images/social-logos/facebook.svg" alt="facebook image"
-                width="18" height="18" /></a>
-          </li>
-          <li class="footer-bottom-item">
-            <a class="footer-bottom-list-link" href="https://instagram.com" target="blank"><img
-                class="footer-bottom-list-link-img" src="./images/social-logos/instagram.svg" alt="instagram image"
-                width="18" height="18" /></a>
-          </li>
-          <li class="footer-bottom-item">
-            <a class="footer-bottom-list-link" href="https://telegram.com" target="blank"><img
-                class="footer-bottom-list-link-img" src="./images/social-logos/telegram.svg" alt="telegram image"
-                width="18" height="18" /></a>
-          </li>
-          <li class="footer-bottom-item">
-            <a class="footer-bottom-list-link" href="https://m.youtube.com" target="blank"><img
-                class="footer-bottom-list-link-img" src="./images/social-logos/youtube.svg" alt="youtube image"
-                width="18" height="18" />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    </li>
+  </template>
 
-
-  <!-- modal -->
-  <dialog class="modal" id="modal">
-    <h3 class="modal-title">Хотите быть в курсе свежих новостей?  Включите уведомления!
-    </h3>
-    <button class="btn modal-turn-btn" id="modal__turn">Включит</button>
-    <button class="close-modal btn" id="modal__close__btn">&times;</button>
-  </dialog>
-
-  <script src="./script/app.js"></script>
 </body>
+
 </html>
