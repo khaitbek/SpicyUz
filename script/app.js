@@ -51,6 +51,7 @@ const updateInputText = debounce(text => {
 });
 
 const searchNews = debounce((searchQuery) => {
+    if(!searchQuery) return;
     const newsResponse =  getNews("https://newsapi.org/v2/everything?",{
         q:searchQuery,
         apiKey:API_KEY
@@ -66,7 +67,7 @@ searchInput.addEventListener("input",evt => {
 categoryList.addEventListener("click",evt => {
     const targetElem = evt.target;
     if(targetElem.matches("#categoryItem")){
-        // searchNews(targetElem.dataset.searchQuery);
+        searchNews(targetElem.dataset.searchQuery);
     }
 })
 
